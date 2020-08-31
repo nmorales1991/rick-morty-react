@@ -1,13 +1,33 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=VT323&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  cursor: url('/img/cursor.png'), auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*:active{
+  cursor: url('/img/cursor2.png'), auto;
+}
+*::selection {
+  background: #ffb7b7;
+}
+
+html{
+  font-family:  'VT323', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.selected{
+  color:red !important;
+}
+
+a:visited {
+  color:black;
 }
